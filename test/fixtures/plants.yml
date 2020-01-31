@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: MyText
+  care_instructions: MyText
+  water_days: 1
+
+two:
+  type: MyText
+  care_instructions: MyText
+  water_days: 1
