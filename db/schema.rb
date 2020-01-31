@@ -10,40 +10,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_31_060037) do
+ActiveRecord::Schema.define(version: 2020_01_31_095015) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "garden_items", force: :cascade do |t|
-    t.date "purchased_date"
-    t.text "nick_name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.integer "user_id"
-    t.integer "plant_id"
-  end
-
   create_table "photos", force: :cascade do |t|
-    t.text "url"
+    t.string "image"
+    t.integer "plant_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "plants", force: :cascade do |t|
-    t.text "type"
-    t.text "care_instructions"
+    t.string "planttype"
+    t.string "name"
+    t.text "description"
+    t.date "date_acquired"
     t.integer "water_days"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
-    t.text "name"
-    t.text "email"
-    t.text "password_digest"
-    t.text "location"
-    t.text "profile_image"
+    t.string "name"
+    t.string "email"
+    t.string "location"
+    t.string "profile_image"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

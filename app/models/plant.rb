@@ -1,4 +1,4 @@
 class Plant < ApplicationRecord
-  has_many :users, through: :garden_items
-
+  belongs_to :user, optional: true
+  has_many :photos
 end
