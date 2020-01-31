@@ -1,0 +1,14 @@
+<h1>Plants#show</h1>
+
+<%= @plant.planttype %> <br>
+<%= @plant.name %> <br>
+Owned by: <%= @plant.user.name %> <br>
+<%= @plant.description %>
+
+<h2>Photos</h2>
+
+<ul>
+<% @plant.photos.each do |p| %>
+<li>ID#<%= p.id %> - <%= p.plant.name %> - <%=  p.image -%> - <%= link_to 'Show', p %> - <%= link_to 'Edit', edit_photo_path(p) %> - <%= link_to 'Delete', p, method: :delete %></li>
+<% end %>
+</ul>

@@ -13,3 +13,8 @@
  *= require_tree .
  *= require_self
  */
+
+img {
+  max-width: 50vw;
+  max-height: 50vh;
+}

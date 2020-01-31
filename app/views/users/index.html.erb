@@ -1,0 +1,7 @@
+<h1>Users#index</h1>
+
+<ul>
+<% @users.each do |u| %>
+  <li><%= u.name %> - <%= link_to 'Show', u %> - <%= link_to 'Edit', edit_user_path(u) %> - <%= link_to 'Delete', u, method: :delete %></li>
+<% end %>
+</ul>

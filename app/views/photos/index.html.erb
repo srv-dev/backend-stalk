@@ -1,0 +1,6 @@
+<h1>Photos#index</h1>
+<ul>
+<% @photos.each do |p| %>
+  <li><%= p.id %> - <%= link_to 'Show', p %> - <%= link_to 'Edit', edit_photo_path(p) %> - <%= link_to 'Delete', p, method: :delete %></li>
+<% end %>
+</ul>
