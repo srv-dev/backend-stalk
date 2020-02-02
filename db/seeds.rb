@@ -88,10 +88,14 @@ frankenstein_photo01 = Photo.create ({
 fiddleleaffig_fred_photo01 = Photo.create ({
   image: 'https://www.whiteflowerfarm.com/mas_assets/cache/image/5/a/6/2/23138.Jpg'
   })
+fern_fernando_photo01 = Photo.create ({
+  image: 'https://www.flowerpower.com.au/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/9/0/9008190130.jpg'
+  })
 
 peacelily_dave.photos << dave_photo01 << dave_photo02
 cactus_spike.photos << spike_photo01
 monstera_frankenstein.photos << frankenstein_photo01
 fiddleleaffig_fred.photos << fiddleleaffig_fred_photo01
+fern_fernando.photos << fern_fernando_photo01
 
 puts "--create #{ Photo.count } photos."
