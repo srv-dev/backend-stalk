@@ -1,28 +1,32 @@
 User.destroy_all
 
 sree = User.create! ({
-  name: 'Sreevani',
+  name: 'Sreevani P',
+  username: 'sree',
   email: 'sree@test.com',
   location: 'Wentworthville',
   profile_image: 'https://placebear.com/200/201',
   password: 'chicken'
 })
 irene = User.create! ({
-  name: 'Irene',
+  name: 'Irene M',
+  username: 'irene',
   email: 'irene@test.com',
   location: 'Roselle',
   profile_image: 'https://placebear.com/200/200',
   password: 'chicken'
 })
 jordan = User.create! ({
-  name: 'Jordan',
+  name: 'Jordan T',
+  username: 'jordan',
   email: 'jordan@test.com',
   location: 'Bondi',
   profile_image: 'https://placebear.com/200/203',
   password: 'chicken'
 })
 tim = User.create! ({
-  name: 'Tim',
+  name: 'Tim H',
+  username: 'tim',
   email: 'tim@test.com',
   location: 'Wentworth Falls',
   profile_image: 'https://placebear.com/200/204',
