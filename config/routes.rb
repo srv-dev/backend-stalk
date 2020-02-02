@@ -1,26 +1,11 @@
 Rails.application.routes.draw do
-  get 'photos/new'
-  get 'photos/create'
-  get 'photos/index'
-  get 'photos/show'
-  get 'photos/edit'
-  get 'photos/update'
-  get 'photos/destroy'
-  get 'plants/new'
-  get 'plants/create'
-  get 'plants/index'
-  get 'plants/show'
-  get 'plants/edit'
-  get 'plants/update'
-  get 'plants/destroy'
-  get 'users/new'
-  get 'users/create'
-  get 'users/index'
-  get 'users/show'
-  get 'users/edit'
-  get 'users/update'
-  get 'users/destroy'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  # post 'user_token' => 'user_token#create'
+
+   post "/login", to: "auth#login"
+   get "/auto_login", to: "auth#auto_login"
+   get "/user_is_authed", to: "auth#user_is_authed"
+
 
   resources :users
   resources :plants
