@@ -8,7 +8,7 @@ class PlantsController < ApplicationController
 
   def index
     @plants = Plant.all
-    render json: @plants
+    render json: @plants, include: :photos
   end
 
   def show

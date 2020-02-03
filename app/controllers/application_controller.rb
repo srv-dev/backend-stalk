@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
 
-  before_action :require_login
+  # before_action :require_login
 
   def encode_token(payload)
     JWT.encode(payload, 'my_secret')

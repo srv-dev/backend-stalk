@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  skip_before_action :require_login, only: [:create]
+  # skip_before_action :require_login, only: [:create]
 
   def new
     @user = User.new
@@ -18,12 +18,12 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
-    render json: @users, include: :plants
+    render json: @users, include: { plants: { include: :photos }}
   end
 
   def show
     @user = User.find params[:id]
-    render json: @user, include: :plants
+    render json: @user, include: { plants: { include: :photos }}
   end
 
   def edit
@@ -33,8 +33,6 @@ class UsersController < ApplicationController
   end
 
   def destroy
-
-
   end
 
   def user_params
