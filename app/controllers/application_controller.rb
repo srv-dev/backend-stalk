@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
 
-  # before_action :require_login
+  before_action :require_login
 
   def encode_token(payload)
     JWT.encode(payload, 'my_secret')
@@ -25,7 +25,7 @@ class ApplicationController < ActionController::Base
   def session_user
     decoded_hash = decoded_token
 
-    if !decoded_has.nil? && !decoded_hash.empty?
+    if !decoded_hash.nil? && !decoded_hash.empty?
       user_id = decoded_hash[0]['user_id']
       @user = User.find_by(id: user_id)
     else
