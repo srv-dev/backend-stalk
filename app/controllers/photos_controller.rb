@@ -23,5 +23,6 @@ class PhotosController < ApplicationController
   end
 
   def destroy
+    Photo.destroy params[:id]
   end
 end

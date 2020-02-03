@@ -33,9 +33,12 @@ class UsersController < ApplicationController
   def update
     @user = User.find params[:id]
     @user.update user_params
+    redirect_to show
   end
 
   def destroy
+    User.destroy params[:id]
+
   end
 
   def user_params

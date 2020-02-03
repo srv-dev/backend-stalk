@@ -1,0 +1,20 @@
+<%= form_for @plant do |f| %>
+
+<%= f.label :name %>
+<%= f.text_field :name %>
+<br>
+<%= f.label :planttype %>
+<%= f.text_field :planttype %>
+<br>
+<%= f.label :description %>
+<%= f.text_field :description %>
+<br>
+<%= f.label :date_acquired %>
+<%= f.date_field :date_acquired %>
+<br>
+<%= f.label :water_days %>
+<%= f.text_field :water_days %>
+<br>
+<%= f.submit %>
+
+<% end %>

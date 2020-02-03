@@ -5,3 +5,4 @@
   <li><%= p.name %> - <%= p.planttype %> - <%= link_to 'Show', p %> - <%= link_to 'Edit', edit_plant_path(p) %> - <%= link_to 'Delete', p, method: :delete %></li>
 <% end %>
 </ul>
+<%= link_to 'New', new_plant_path %>
