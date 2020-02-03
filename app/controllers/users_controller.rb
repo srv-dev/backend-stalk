@@ -19,12 +19,12 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
-    render json: @users, include: :plants
+    # render json: @users, include: { plants: { include: :photos }}
   end
 
   def show
     @user = User.find params[:id]
-    render json: @user, include: :plants
+    # render json: @user, include: { plants: { include: :photos }}
   end
 
   def edit
@@ -34,8 +34,6 @@ class UsersController < ApplicationController
   end
 
   def destroy
-
-
   end
 
   private
