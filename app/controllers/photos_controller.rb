@@ -1,4 +1,8 @@
 class PhotosController < ApplicationController
+
+  skip_before_action :require_login, only: [:index, :show]
+  
+
   def new
     @photo = Photo.new
   end

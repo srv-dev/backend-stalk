@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
+  
+  skip_before_action :require_login, only: [:index, :show, :create]
   skip_before_action :verify_authenticity_token, raise: false
-  skip_before_action :require_login, only: [:create]
   # before_action :require_login, only: [:show]
 
 
