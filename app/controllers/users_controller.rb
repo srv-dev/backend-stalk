@@ -15,6 +15,7 @@ class UsersController < ApplicationController
     else
       render json: {errors: user.errors.full_messages}, status: :not_acceptable
     end
+
   end
 
   def index
@@ -38,7 +39,7 @@ class UsersController < ApplicationController
 
   private
   def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation)
+    params.require(:user).permit(:email, :name, :username, :password, :password_confirmation)
   end
 
 end
