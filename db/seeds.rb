@@ -42,7 +42,7 @@ cactus_spike = Plant.create! ({
   name: 'Spike',
   description: 'Got as a gift from friend',
   water_days: 15,
-  last_watered: Time.now
+  last_watered: 1580781206
   })
 cactus_spike2 = Plant.create! ({
   planttype: 'Cactus2',
@@ -188,3 +188,8 @@ cactus_spike4.photos << spike_photo14
 
 
 puts "--create #{ Photo.count } photos."
+
+
+
+# 1580781206 unix time for tuesday
+# 1580799153 unxi time for tuesday on the train
