@@ -53,7 +53,12 @@ class PlantsController < ApplicationController
   end
 
   def destroy
-    Plant.destroy params[:id]
+    @plant = Plant.find params[:id]
+    @plant.destroy
+    respond_to do |format|
+      format.html { redirect_to plants_url, notice: 'Plant was successfully destroyed.' }
+      format.json { head :no_content }
+    end
   end
 
   private
