@@ -10,7 +10,17 @@ class PlantsController < ApplicationController
 
   def create
     # plant = @current_user.plants.create plant_params
-    redirect_to plant_path plant.id
+    # redirect_to plant_path plant.id
+    @plant = Plant.new
+    respond_to do |format|
+      if Plant.create(plant_params)
+        format.html { redirect_to @plant, notice: 'Plant was successfully created!' }
+        format.json { render :show, status: :ok, location: @plant }
+      else
+        format.html { render :create }
+        format.json { render json: @plant.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   def index
@@ -28,9 +38,9 @@ class PlantsController < ApplicationController
   end
 
   def update
-    @plant = Plant.find params[:id]
     # @plant.update plant_params
     # redirect_to show
+    @plant = Plant.find params[:id]
     respond_to do |format|
       if @plant.update(plant_params)
         format.html { redirect_to @plant, notice: 'Plant was successfully watered!' }
@@ -48,6 +58,6 @@ class PlantsController < ApplicationController
 
   private
     def plant_params
-      params.require(:plant).permit(:planttype, :name, :water_days, :acquired_date, :password, :last_watered)
+      params.require(:plant).permit(:planttype, :user_id, :name, :description, :water_days, :date_acquired, :password, :last_watered)
     end
 end
