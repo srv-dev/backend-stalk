@@ -41,28 +41,32 @@ cactus_spike = Plant.create! ({
   planttype: 'Cactus',
   name: 'Spike',
   description: 'Got as a gift from friend',
-  water_days: 15,
-  last_watered: 1580781206
+  water_days: 6,
+  date_acquired: 13.days.ago,
+  last_watered: Time.now
   })
 cactus_spike2 = Plant.create! ({
   planttype: 'Cactus2',
   name: 'Spike2',
   description: 'Got as a gift from friend',
-  water_days: 15,
+  water_days: 3,
+  date_acquired: 15.days.ago,
   last_watered: Time.now
   })
 cactus_spike3 = Plant.create! ({
   planttype: 'Cactus3',
   name: 'Spike3',
   description: 'Got as a gift from friend',
-  water_days: 15,
+  water_days: 4,
+  date_acquired: 18.days.ago,
   last_watered: Time.now
   })
 cactus_spike4 = Plant.create! ({
   planttype: 'Cactus4',
   name: 'Spike4',
   description: 'Got as a gift from friend',
-  water_days: 15,
+  water_days: 3,
+  date_acquired: 12.days.ago,
   last_watered: Time.now
   })
 fern_fernando = Plant.create! ({
@@ -70,13 +74,15 @@ fern_fernando = Plant.create! ({
   name: 'Fernando',
   description: 'Got from the marketplace - cute little fern',
   water_days: 5,
+  date_acquired: 40.days.ago,
   last_watered: Time.now
   })
 monstera_frankenstein = Plant.create! ({
   planttype: 'Monstera',
   name: 'Frankenstein',
   description: 'Purchased from Ikea',
-  water_days: 10,
+  water_days: 4,
+  date_acquired: 20.days.ago,
   last_watered: Time.now
   })
 peacelily_dave = Plant.create! ({
@@ -84,13 +90,15 @@ peacelily_dave = Plant.create! ({
   name: 'Dave',
   description: 'grew from cutting',
   water_days: 3,
+  date_acquired: 10.days.ago,
   last_watered: Time.now
   })
 fiddleleaffig_fred = Plant.create! ({
   planttype: 'Fiddle Leaf Fig',
   name: 'Fred',
   description: 'bought from nursery',
-  water_days: 5,
+  water_days: 7,
+  date_acquired: 30.days.ago,
   last_watered: Time.now
   })
 
