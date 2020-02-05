@@ -40,6 +40,7 @@ class PlantsController < ApplicationController
   def update
     # @plant.update plant_params
     # redirect_to show
+    @plant = Plant.find params[:id]
     respond_to do |format|
       if @plant.update(plant_params)
         format.html { redirect_to @plant, notice: 'Plant was successfully watered!' }
