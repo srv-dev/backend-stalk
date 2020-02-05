@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  
+
   skip_before_action :require_login, only: [:index, :show, :create]
   skip_before_action :verify_authenticity_token, raise: false
   # before_action :require_login, only: [:show]
@@ -46,7 +46,6 @@ class UsersController < ApplicationController
 
   def destroy
     User.destroy params[:id]
-
   end
 
   private
