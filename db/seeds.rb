@@ -113,63 +113,83 @@ puts "--created #{ Plant.count } plants: #{ Plant.pluck(:name).join(', ')}"
 Photo.destroy_all
 
 dave_photo01 = Photo.create! ({
+  description: 'plant description',
   image: 'https://i.etsystatic.com/15265690/r/il/9c7e6c/1211862072/il_1588xN.1211862072_3kuo.jpg'
   })
 dave_photo02 = Photo.create! ({
+  description: 'plant description',
   image: 'https://www.gardenwize.com.au/wp-content/uploads/2016/11/Spathiphyllum.jpg'
   })
-spike_photo01 = Photo.create ({
+spike_photo01 = Photo.create! ({
+  description: 'plant description',
   image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
   })
-spike_photo02 = Photo.create ({
+spike_photo02 = Photo.create! ({
+  description: 'plant description',
   image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
   })
-spike_photo03 = Photo.create ({
+spike_photo03 = Photo.create! ({
+  description: 'plant description',
   image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
   })
-spike_photo04 = Photo.create ({
+spike_photo04 = Photo.create! ({
+  description: 'plant description',
   image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
   })
-frankenstein_photo01 = Photo.create ({
+frankenstein_photo01 = Photo.create! ({
+  description: 'plant description',
   image: 'https://www.bloomtown.com.au/wp-content/uploads/2017/07/Concrete-Planter-and-Monstera-1500x1500.jpg'
   })
-fiddleleaffig_fred_photo01 = Photo.create ({
+fiddleleaffig_fred_photo01 = Photo.create! ({
+  description: 'plant description',
   image: 'https://www.whiteflowerfarm.com/mas_assets/cache/image/5/a/6/2/23138.Jpg'
   })
-fern_fernando_photo01 = Photo.create ({
+fern_fernando_photo01 = Photo.create! ({
+  description: 'plant description',
   image: 'https://www.flowerpower.com.au/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/9/0/9008190130.jpg'
   })
-spike_photo04 = Photo.create ({
+spike_photo04 = Photo.create! ({
+  description: 'plant description',
   image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
   })
-spike_photo05 = Photo.create ({
+spike_photo05 = Photo.create! ({
+  description: 'plant description',
   image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
   })
-spike_photo06 = Photo.create ({
+spike_photo06 = Photo.create! ({
+  description: 'plant description',
   image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
   })
-spike_photo07 = Photo.create ({
+spike_photo07 = Photo.create! ({
+  description: 'plant description',
   image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
   })
-spike_photo08 = Photo.create ({
+spike_photo08 = Photo.create! ({
+  description: 'plant description',
   image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
   })
-spike_photo09 = Photo.create ({
+spike_photo09 = Photo.create! ({
+  description: 'plant description',
   image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
   })
-spike_photo10 = Photo.create ({
+spike_photo10 = Photo.create! ({
+  description: 'plant description',
   image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
   })
-spike_photo11 = Photo.create ({
+spike_photo11 = Photo.create! ({
+  description: 'plant description',
   image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
   })
-spike_photo12 = Photo.create ({
+spike_photo12 = Photo.create! ({
+  description: 'plant description',
   image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
   })
-spike_photo13 = Photo.create ({
+spike_photo13 = Photo.create! ({
+  description: 'plant description',
   image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
   })
-spike_photo14 = Photo.create ({
+spike_photo14 = Photo.create! ({
+  description: 'plant description',
   image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
   })
 
