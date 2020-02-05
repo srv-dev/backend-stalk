@@ -2,6 +2,7 @@ class PlantsController < ApplicationController
 
   skip_before_action :require_login, only: [:index, :show]
 
+  skip_before_action :verify_authenticity_token, raise: false
 
   def new
     @plant = Plant.new
@@ -28,8 +29,17 @@ class PlantsController < ApplicationController
 
   def update
     @plant = Plant.find params[:id]
-    @plant.update plant_params
-    redirect_to show
+    # @plant.update plant_params
+    # redirect_to show
+    respond_to do |format|
+      if @plant.update(plant_params)
+        format.html { redirect_to @plant, notice: 'Plant was successfully watered!' }
+        format.json { render :show, status: :ok, location: @plant }
+      else
+        format.html { render :edit }
+        format.json { render json: @plant.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   def destroy
@@ -38,6 +48,6 @@ class PlantsController < ApplicationController
 
   private
     def plant_params
-      params.require(:plant).permit(:planttype, :name, :water_days, :acquired_date, :password)
+      params.require(:plant).permit(:planttype, :name, :water_days, :acquired_date, :password, :last_watered)
     end
 end

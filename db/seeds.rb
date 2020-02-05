@@ -196,3 +196,8 @@ cactus_spike4.photos << spike_photo14
 
 
 puts "--create #{ Photo.count } photos."
+
+
+
+# 1580781206 unix time for tuesday
+# 1580799153 unxi time for tuesday on the train
