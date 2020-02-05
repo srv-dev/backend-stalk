@@ -43,7 +43,6 @@ group :development do
   gem 'pry-byebug'
 
   gem 'jwt'
-  gem 'knock'
 end
 
 group :test do
