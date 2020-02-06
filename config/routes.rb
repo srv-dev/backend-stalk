@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  get 'follows/create'
+  get 'follows/index'
+  get 'follows/delete'
   # post 'user_token' => 'user_token#create'
 
    post "/login", to: "auth#login"
@@ -10,5 +13,6 @@ Rails.application.routes.draw do
   resources :users
   resources :plants
   resources :photos
+  resources :follows
 
 end

@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   has_many :plants
   has_many :photos, through: 'plants'
+  has_many :follows
 
   has_secure_password
 
