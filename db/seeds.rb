@@ -218,6 +218,34 @@ cactus_spike4.photos << spike_photo14
 puts "--create #{ Photo.count } photos."
 
 
+Follow.destroy_all
+
+Follow.create! ({
+  user_id: jordan.id,
+  plant_id: cactus_spike.id
+  })
+Follow.create! ({
+  user_id: jordan.id,
+  plant_id: peacelily_dave.id
+  })
+Follow.create! ({
+  user_id: jordan.id,
+  plant_id: fiddleleaffig_fred.id
+  })
+Follow.create! ({
+  user_id: tim.id,
+  plant_id: fiddleleaffig_fred.id
+  })
+Follow.create! ({
+  user_id: sree.id,
+  plant_id: cactus_spike.id
+  })
+Follow.create! ({
+  user_id: irene.id,
+  plant_id: cactus_spike.id
+  })
+
+  puts "--creating #{ Follow.count }follows"
 
 # 1580781206 unix time for tuesday
 # 1580799153 unxi time for tuesday on the train
