@@ -32,6 +32,14 @@ tim = User.create! ({
   profile_image: 'https://placebear.com/200/204',
   password: 'chicken'
 })
+tim = User.create! ({
+  name: 'Luke H',
+  username: 'luke',
+  email: 'luke@test.com',
+  location: 'Manly',
+  profile_image: 'https://placebear.com/201/204',
+  password: 'chicken'
+})
 
 puts "--created #{ User.count } users: #{ User.pluck(:name).join(', ')}"
 
@@ -43,30 +51,6 @@ cactus_spike = Plant.create! ({
   description: 'Got as a gift from friend',
   water_days: 6,
   date_acquired: 13.days.ago,
-  last_watered: Time.now
-  })
-cactus_spike2 = Plant.create! ({
-  planttype: 'Cactus2',
-  name: 'Spike2',
-  description: 'Got as a gift from friend',
-  water_days: 3,
-  date_acquired: 15.days.ago,
-  last_watered: Time.now
-  })
-cactus_spike3 = Plant.create! ({
-  planttype: 'Cactus3',
-  name: 'Spike3',
-  description: 'Got as a gift from friend',
-  water_days: 4,
-  date_acquired: 18.days.ago,
-  last_watered: Time.now
-  })
-cactus_spike4 = Plant.create! ({
-  planttype: 'Cactus4',
-  name: 'Spike4',
-  description: 'Got as a gift from friend',
-  water_days: 3,
-  date_acquired: 12.days.ago,
   last_watered: Time.now
   })
 fern_fernando = Plant.create! ({
@@ -124,18 +108,6 @@ spike_photo01 = Photo.create! ({
   description: 'plant description',
   image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
   })
-spike_photo02 = Photo.create! ({
-  description: 'plant description',
-  image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
-  })
-spike_photo03 = Photo.create! ({
-  description: 'plant description',
-  image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
-  })
-spike_photo04 = Photo.create! ({
-  description: 'plant description',
-  image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
-  })
 frankenstein_photo01 = Photo.create! ({
   description: 'plant description',
   image: 'https://www.bloomtown.com.au/wp-content/uploads/2017/07/Concrete-Planter-and-Monstera-1500x1500.jpg'
@@ -148,71 +120,13 @@ fern_fernando_photo01 = Photo.create! ({
   description: 'plant description',
   image: 'https://www.flowerpower.com.au/media/catalog/product/cache/e4d64343b1bc593f1c5348fe05efa4a6/9/0/9008190130.jpg'
   })
-spike_photo04 = Photo.create! ({
-  description: 'plant description',
-  image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
-  })
-spike_photo05 = Photo.create! ({
-  description: 'plant description',
-  image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
-  })
-spike_photo06 = Photo.create! ({
-  description: 'plant description',
-  image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
-  })
-spike_photo07 = Photo.create! ({
-  description: 'plant description',
-  image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
-  })
-spike_photo08 = Photo.create! ({
-  description: 'plant description',
-  image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
-  })
-spike_photo09 = Photo.create! ({
-  description: 'plant description',
-  image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
-  })
-spike_photo10 = Photo.create! ({
-  description: 'plant description',
-  image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
-  })
-spike_photo11 = Photo.create! ({
-  description: 'plant description',
-  image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
-  })
-spike_photo12 = Photo.create! ({
-  description: 'plant description',
-  image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
-  })
-spike_photo13 = Photo.create! ({
-  description: 'plant description',
-  image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
-  })
-spike_photo14 = Photo.create! ({
-  description: 'plant description',
-  image: 'https://media1.popsugar-assets.com/files/thumbor/tICCfn4rsqqJtsfpsAetK58bo-M/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2019/06/26/019/n/1922794/485f18f5df53872f_netimg9XRs8e/i/Micro-Mini-Cactus-Micro-Mini-Handmade-Ceramic-Planter.jpg'
-  })
 
 
 peacelily_dave.photos << dave_photo01 << dave_photo02
 cactus_spike.photos << spike_photo01
-cactus_spike2.photos << spike_photo02
-cactus_spike3.photos << spike_photo03
-cactus_spike4.photos << spike_photo04
 monstera_frankenstein.photos << frankenstein_photo01
 fiddleleaffig_fred.photos << fiddleleaffig_fred_photo01
 fern_fernando.photos << fern_fernando_photo01
-cactus_spike4.photos << spike_photo04
-cactus_spike4.photos << spike_photo05
-cactus_spike4.photos << spike_photo06
-cactus_spike4.photos << spike_photo07
-cactus_spike4.photos << spike_photo08
-cactus_spike4.photos << spike_photo09
-cactus_spike4.photos << spike_photo10
-cactus_spike4.photos << spike_photo11
-cactus_spike4.photos << spike_photo12
-cactus_spike4.photos << spike_photo13
-cactus_spike4.photos << spike_photo14
 
 
 puts "--create #{ Photo.count } photos."
@@ -245,7 +159,42 @@ Follow.create! ({
   plant_id: cactus_spike.id
   })
 
-  puts "--creating #{ Follow.count }follows"
+  # puts "--creating #{ Follow.count }follows"
 
 # 1580781206 unix time for tuesday
 # 1580799153 unxi time for tuesday on the train
+
+## Plant Template
+# plantname = Plant.create! ({
+#   planttype: '',
+#   name: '',
+#   description: '',
+#   water_days: 6,
+#   date_acquired: 10.days.ago,
+#   last_watered: Time.now
+# })
+# photonum = Photo.create! ({
+#   description: '',
+#   image: '/photos/.jpg'
+# })
+# user.plants << plantname
+# plantname.photos << photonum
+#
+# plantname = Plant.create! ({
+#   planttype: '',
+#   name: '',
+#   description: '',
+#   water_days: 6,
+#   date_acquired: 10.days.ago,
+#   last_watered: Time.now
+# })
+# photonum = Photo.create! ({
+#   description: '',
+#   image: '/photos/.jpg'
+# })
+# user.plants << plantname
+# plantname.photos << photonum
+
+
+puts "--created #{ Plant.count } plants: #{ Plant.pluck(:name).join(', ')}"
+puts "--create #{ Photo.count } photos."
