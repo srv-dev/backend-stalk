@@ -42,7 +42,6 @@ group :development do
   gem 'pry-rails'
   gem 'pry-byebug'
 
-  gem 'jwt'
 end
 
 group :test do
@@ -59,3 +58,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "rack-cors", "~> 1.1"
 
 gem "rails_12factor", "~> 0.0.3"
+gem 'jwt'
