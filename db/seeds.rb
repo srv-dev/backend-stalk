@@ -56,7 +56,7 @@ luke = User.create! ({
 # })
 # photo_plantname = Photo.create! ({
 #   description: '',
-#   image: '/photos/.jpg'
+#   image: 'photos/.jpg'
 # })
 # user.plants << plantname
 # plantname.photos << photo_plantname
@@ -71,7 +71,7 @@ adamthevine = Plant.create! ({
 })
 photo_adamthevine = Photo.create! ({
   description: 'sad looking guy but i love him',
-  image: '/photos/adamthevine.jpg'
+  image: 'photos/adamthevine.jpg'
 })
 jordan.plants << adamthevine
 adamthevine.photos << photo_adamthevine
@@ -86,7 +86,7 @@ aloethere = Plant.create! ({
 })
 photo_aloethere = Photo.create! ({
   description: 'got as a gift',
-  image: '/photos/aloethere.jpg'
+  image: 'photos/aloethere.jpg'
 })
 irene.plants << aloethere
 aloethere.photos << photo_aloethere
@@ -101,7 +101,7 @@ birdofparadise = Plant.create! ({
 })
 photo_birdofparadise = Photo.create! ({
   description: 'Beautiful plant - one of my favourites!',
-  image: '/photos/birdofparadise.jpg'
+  image: 'photos/birdofparadise.jpg'
 })
 sree.plants << birdofparadise
 birdofparadise.photos << photo_birdofparadise
@@ -116,11 +116,11 @@ birdnestfern = Plant.create! ({
 })
 photo_birdnestfern01 = Photo.create! ({
   description: 'gift from a friend',
-  image: '/photos/birdsnestfern01.jpg'
+  image: 'photos/birdsnestfern01.jpg'
 })
 photo_birdnestfern02 = Photo.create! ({
   description: 'a new leaf!',
-  image: '/photos/birdsnestfern02.jpg'
+  image: 'photos/birdsnestfern02.jpg'
 })
 jordan.plants << birdnestfern
 birdnestfern.photos << photo_birdnestfern01 << photo_birdnestfern02
@@ -135,7 +135,7 @@ draco = Plant.create! ({
 })
 photo_draco = Photo.create! ({
   description: 'rare plant, excited to see how it looks',
-  image: '/photos/dragontail.jpg'
+  image: 'photos/dragontail.jpg'
 })
 tim.plants << draco
 draco.photos << photo_draco
@@ -150,7 +150,7 @@ fiddler = Plant.create! ({
 })
 photo_fiddler = Photo.create! ({
   description: 'My largest plant!',
-  image: '/photos/fiddleleaffig.jpg'
+  image: 'photos/fiddleleaffig.jpg'
 })
 irene.plants << fiddler
 fiddler.photos << photo_fiddler
@@ -165,7 +165,7 @@ troug = Plant.create! ({
 })
 photo_troug = Photo.create! ({
   description: '',
-  image: '/photos/fishboneprayerplant.jpg'
+  image: 'photos/fishboneprayerplant.jpg'
 })
 jordan.plants << troug
 troug.photos << photo_troug
@@ -180,7 +180,7 @@ gertrude = Plant.create! ({
 })
 photo_gertrude = Photo.create! ({
   description: 'big and healthy!',
-  image: '/photos/gertrudefiddleleaf.jpg'
+  image: 'photos/gertrudefiddleleaf.jpg'
 })
 sree.plants << gertrude
 gertrude.photos << photo_gertrude
@@ -195,7 +195,7 @@ midas = Plant.create! ({
 })
 photo_midas = Photo.create! ({
   description: `nice trailing plant, can't wait for it to get longer`,
-  image: '/photos/goldenpothos.jpg'
+  image: 'photos/goldenpothos.jpg'
 })
 irene.plants << midas
 midas.photos << photo_midas
@@ -210,7 +210,7 @@ grumpy = Plant.create! ({
 })
 photo_grumpy = Photo.create! ({
   description: 'cut back short - hoping it will grow again',
-  image: '/photos/grumpy.jpg'
+  image: 'photos/grumpy.jpg'
 })
 tim.plants << grumpy
 grumpy.photos << photo_grumpy
@@ -225,7 +225,7 @@ heartleaf = Plant.create! ({
 })
 photo_heartleaf = Photo.create! ({
   description: 'Valentines Day Gift',
-  image: '/photos/heartleafphilodendron.jpg'
+  image: 'photos/heartleafphilodendron.jpg'
 })
 jordan.plants << heartleaf
 heartleaf.photos << photo_heartleaf
@@ -240,7 +240,7 @@ herbert = Plant.create! ({
 })
 photo_herbert = Photo.create! ({
   description: 'Interesting colouring!',
-  image: '/photos/herbert.jpg'
+  image: 'photos/herbert.jpg'
 })
 tim.plants << herbert
 herbert.photos << photo_herbert
@@ -255,7 +255,7 @@ katemoss = Plant.create! ({
 })
 photo_katemoss = Photo.create! ({
   description: 'My oldest plant',
-  image: '/photos/katemoss.jpg'
+  image: 'photos/katemoss.jpg'
 })
 irene.plants << katemoss
 katemoss.photos << photo_katemoss
@@ -270,7 +270,7 @@ keanuleaves = Plant.create! ({
 })
 photo_keanuleaves = Photo.create! ({
   description: 'big and green!',
-  image: '/photos/keanuleaves.jpg'
+  image: 'photos/keanuleaves.jpg'
 })
 tim.plants << keanuleaves
 keanuleaves.photos << photo_keanuleaves
@@ -285,11 +285,11 @@ marksuccerberg = Plant.create! ({
 })
 photo_marksuccerberg01 = Photo.create! ({
   description: 'Love the Succ',
-  image: '/photos/marksuccerberg01.jpg'
+  image: 'photos/marksuccerberg01.jpg'
 })
 photo_marksuccerberg02 = Photo.create! ({
   description: 'Such great texture(totally not a robot)',
-  image: '/photos/marksuccerberg02.jpg'
+  image: 'photos/marksuccerberg02.jpg'
 })
 jordan.plants << marksuccerberg
 marksuccerberg.photos << photo_marksuccerberg01 << photo_marksuccerberg02
@@ -304,7 +304,7 @@ michellebranch = Plant.create! ({
 })
 photo_michellebranch = Photo.create! ({
   description: 'I think it died',
-  image: '/photos/michellebranch.jpg'
+  image: 'photos/michellebranch.jpg'
 })
 irene.plants << michellebranch
 michellebranch.photos << photo_michellebranch
@@ -319,7 +319,7 @@ zola = Plant.create! ({
 })
 photo_zola = Photo.create! ({
   description: 'A perfect Christmas gift',
-  image: '/photos/minimonstera.jpg'
+  image: 'photos/minimonstera.jpg'
 })
 tim.plants << zola
 zola.photos << photo_zola
@@ -334,7 +334,7 @@ monstera01 = Plant.create! ({
 })
 photo_monstera01 = Photo.create! ({
   description: 'My Pride and Joy',
-  image: '/photos/monstera.jpg'
+  image: 'photos/monstera.jpg'
 })
 sree.plants << monstera01
 monstera01.photos << photo_monstera01
@@ -349,11 +349,11 @@ palmela = Plant.create! ({
 })
 photo_palmela01 = Photo.create! ({
   description: 'My pride and joy',
-  image: '/photos/palmela02.jpg'
+  image: 'photos/palmela02.jpg'
 })
 photo_palmela02 = Photo.create! ({
   description: 'The only thing that warms my cold heart',
-  image: '/photos/palmela01.jpg'
+  image: 'photos/palmela01.jpg'
 })
 luke.plants << palmela
 palmela.photos << photo_palmela01 << photo_palmela02
@@ -368,7 +368,7 @@ poorboy = Plant.create! ({
 })
 photo_poorboy = Photo.create! ({
   description: 'leaning a little to the right',
-  image: '/photos/poorboy.jpg'
+  image: 'photos/poorboy.jpg'
 })
 jordan.plants << poorboy
 poorboy.photos << photo_poorboy
@@ -383,7 +383,7 @@ rapunzel = Plant.create! ({
 })
 photo_rapunzel = Photo.create! ({
   description: 'She might look dead but she is fine!',
-  image: '/photos/rapunzel.jpg'
+  image: 'photos/rapunzel.jpg'
 })
 irene.plants << rapunzel
 rapunzel.photos << photo_rapunzel
@@ -398,7 +398,7 @@ rojoconjo = Plant.create! ({
 })
 photo_rojoconjo = Photo.create! ({
   description: 'I only got this because it was fun to say',
-  image: '/photos/rojocongo.jpg'
+  image: 'photos/rojocongo.jpg'
 })
 tim.plants << rojoconjo
 rojoconjo.photos << photo_rojoconjo
@@ -413,7 +413,7 @@ spock = Plant.create! ({
 })
 photo_spock = Photo.create! ({
   description: 'such a pretty plant',
-  image: '/photos/rubberplant.jpg'
+  image: 'photos/rubberplant.jpg'
 })
 jordan.plants << spock
 spock.photos << photo_spock
@@ -428,7 +428,7 @@ lilith = Plant.create! ({
 })
 photo_lilith = Photo.create! ({
   description: 'Growing fantastically!',
-  image: '/photos/sensationpeacelily.jpg'
+  image: 'photos/sensationpeacelily.jpg'
 })
 sree.plants << lilith
 lilith.photos << photo_lilith
@@ -443,7 +443,7 @@ excalibur = Plant.create! ({
 })
 photo_excalibur = Photo.create! ({
   description: 'Great looking plant - a true marvel!',
-  image: '/photos/silversword.jpg'
+  image: 'photos/silversword.jpg'
 })
 tim.plants << excalibur
 excalibur.photos << photo_excalibur
@@ -458,7 +458,7 @@ snowqueen = Plant.create! ({
 })
 photo_snowqueen = Photo.create! ({
   description: 'interesting coloring',
-  image: '/photos/snowQueenPothos.jpg'
+  image: 'photos/snowQueenPothos.jpg'
 })
 irene.plants << snowqueen
 snowqueen.photos << photo_snowqueen
@@ -473,7 +473,7 @@ snowqueen.photos << photo_snowqueen
 # })
 # photo_plantname = Photo.create! ({
 #   description: '',
-#   image: '/photos/.jpg'
+#   image: 'photos/.jpg'
 # })
 # user.plants << plantname
 # plantname.photos << photo_plantname
