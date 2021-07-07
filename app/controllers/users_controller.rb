@@ -21,7 +21,6 @@ class UsersController < ApplicationController
       render json: {errors: @user.errors.full_messages}, status: :not_acceptable
     end
 
-
   end
 
   def index
